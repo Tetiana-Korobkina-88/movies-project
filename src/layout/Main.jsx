@@ -1,5 +1,7 @@
 import React from "react";
-import { MovieList } from '../components/MovieList'
+import { MovieList } from '../components/MovieList';
+import { Search } from "../components/Search";
+import { Preloader } from '../components/Preloader'
 
 class Main extends React.Component {
   state = {
@@ -16,7 +18,8 @@ class Main extends React.Component {
     const { movies } = this.state;
     
     return <main className="container  content">
-      { movies.length ? (<MovieList movies={this.state.movies} />) : <h3>Loading...</h3> }
+      <Search />
+      { movies.length ? (<MovieList movies={this.state.movies} />) : <Preloader /> }
       </main>
     }
 }
