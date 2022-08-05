@@ -8,7 +8,7 @@ function App() {
     <React.Fragment>
       <Header />
       <Main />
-      <Footer />
+      <Footer /> 
     </React.Fragment>
   );
 }
