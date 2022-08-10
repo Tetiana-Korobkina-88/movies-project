@@ -31,3 +31,7 @@ nav {
 label:not(:last-child) {
   margin-right: 3rem;
 }
+
+.pagination {
+  text-align: center;
+}
